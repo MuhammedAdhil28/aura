@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jhandi Munda Bet</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎲EARN AURA🎲</h1>
+
+<!-- Indian Time -->
+<h3>🇮🇳 Indian Time: <span id="clock"></span></h3>
+
+<div class="game-box">
+
+  <!-- Round -->
+  <h3>🎯 Round: <span id="round">1</span></h3>
+
+  <!-- Timer -->
+  <h3>⏳ Time Left: <span id="timer">3:00</span></h3>
+
+  <h3>Click symbols to add ₹50</h3>
+
+  <!-- Grid -->
+  <div class="grid">
+    <div class="card" onclick="addBet('Crown')">👑 Crown <span id="Crown">0</span></div>
+    <div class="card" onclick="addBet('Anchor')">⚓ Anchor <span id="Anchor">0</span></div>
+    <div class="card" onclick="addBet('Diamond')">💎 Diamond <span id="Diamond">0</span></div>
+
+    <div class="card" onclick="addBet('Spade')">♠️ Spade <span id="Spade">0</span></div>
+    <div class="card" onclick="addBet('Heart')">❤️ Heart <span id="Heart">0</span></div>
+    <div class="card" onclick="addBet('Club')">♣️ Club <span id="Club">0</span></div>
+  </div>
+
+  <h2>Total Bet: ₹<span id="totalBet">0</span></h2>
+
+  <button class="pay-btn" onclick="payNow()">💰 Pay Now</button>
+
+  <!-- Payment Section -->
+  <div class="payment-box">
+    <h3>💰 Payment</h3>
+
+    <p>UPI ID: <b id="upiId">shifashamsath17-2@okicici</b></p>
+
+    <button class="copy-btn" onclick="copyUPI()">📋 Copy UPI ID</button>
+
+    <h3>Scan & Pay</h3>
+    <img src="qr.png" class="qr">
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

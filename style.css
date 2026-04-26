@@ -1,0 +1,74 @@
+body {
+  text-align: center;
+  font-family: Arial;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.game-box {
+  background: white;
+  color: black;
+  padding: 20px;
+  margin: 30px auto;
+  width: 360px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card:nth-child(1){background:#ff6b6b;}
+.card:nth-child(2){background:#48dbfb;}
+.card:nth-child(3){background:#5f27cd;}
+.card:nth-child(4){background:#1dd1a1;}
+.card:nth-child(5){background:#ff9f43;}
+.card:nth-child(6){background:#54a0ff;}
+
+.pay-btn {
+  margin-top: 10px;
+  padding: 12px;
+  width: 100%;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.copy-btn {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #0056b3;
+}
+
+.qr {
+  width: 200px;
+  margin-top: 10px;
+}
